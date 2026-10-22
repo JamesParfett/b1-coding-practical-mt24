@@ -78,7 +78,7 @@ class Mission:
     def from_csv(cls, file_name: str):
         data = pd.read_csv(file_name) #reads data from file and stores it in variable
 
-        reference = data["reference"].to_numpy() #sets the 3 variables in the data structure according to what is in data file
+        reference = data["reference"].to_numpy() #sets the 3 variables according to what is in data file
         cave_height = data["cave_height"].to_numpy()
         cave_depth = data["cave_depth"].to_numpy()
 
